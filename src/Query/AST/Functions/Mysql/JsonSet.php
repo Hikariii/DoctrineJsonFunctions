@@ -10,7 +10,7 @@ use Doctrine\ORM\Query\Parser;
 use Doctrine\ORM\Query\SqlWalker;
 
 /**
- * "JSON_SET" "(" StringPrimary "," StringPrimary "," StringPrimary { "," StringPrimary "," StringPrimary }* ")"
+ * "JSON_SET" "(" StringPrimary "," StringPrimary "," NewObjectArg { "," StringPrimary "," NewObjectArg }* ")"
  */
 class JsonSet extends FunctionNode
 {
@@ -76,7 +76,7 @@ class JsonSet extends FunctionNode
 
 		$parser->match(Lexer::T_COMMA);
 
-		$this->firstJsonValExpr = $parser->StringPrimary();
+		$this->firstJsonValExpr = $parser->NewObjectArg();
 		$this->pathValExpressions[] = $this->firstJsonValExpr;
 
 		while ($parser->getLexer()->isNextToken(Lexer::T_COMMA)) {
@@ -84,7 +84,7 @@ class JsonSet extends FunctionNode
 			$this->pathValExpressions[] = $parser->StringPrimary();
 
 			$parser->match(Lexer::T_COMMA);
-			$this->pathValExpressions[] = $parser->StringPrimary();
+			$this->pathValExpressions[] = $parser->NewObjectArg();
 		}
 
 		$parser->match(Lexer::T_CLOSE_PARENTHESIS);

@@ -1,0 +1,25 @@
+doctrine:
+     orm:
+         dql:
+             string_functions:
+                 json_append: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonAppend
+                 json_array: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonArray
+                 json_array_append: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonArrayAppend
+                 json_array_insert: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonArrayInsert
+                 json_contains: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
+                 json_contains_path: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContainsPath
+                 json_depth: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonDepth
+                 json_extract: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonExtract
+                 json_insert: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonInsert
+                 json_keys: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonKeys
+                 json_length: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonLength
+                 json_merge: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonMerge
+                 json_object: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonObject
+                 json_quote: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonQuote
+                 json_remove: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonRemove
+                 json_replace: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonReplace
+                 json_search: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonSearch
+                 json_set: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonSet
+                 json_type: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonType
+                 json_unquote: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonUnquote
+                 json_valid: Syslogic\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonValid
