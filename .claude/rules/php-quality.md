@@ -42,7 +42,7 @@ paths:
 
 ## Type-annotation approach
 
-PHPStan and Psalm both gate a change and must pass simultaneously; when an annotation satisfies one but not the other, **prefer a less-strict type that satisfies both** over parallel `@phpstan-`/`@psalm-` docblocks. Resolving a reported type error (less-strict types, template parameters, `MixedAssignment`, invariant generics, tool-specific docblocks as last resort): [php-type-errors skill](../skills/php-type-errors/SKILL.md).
+PHPStan and Psalm both gate a change and must pass simultaneously. Which annotation to reach for when they disagree, and how to resolve a reported type error: [php-type-errors skill](../skills/php-type-errors/SKILL.md).
 
 ## Parameter validation
 

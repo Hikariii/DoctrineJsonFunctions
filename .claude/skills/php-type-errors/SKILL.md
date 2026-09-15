@@ -86,4 +86,4 @@ Only when one tool needs syntax that crashes the other (PHPStan `covariant`, sta
 
 ## Registered suppressions already in this repo
 
-`psalm.xml` suppresses `UnusedClass`, `PossiblyUnusedMethod` and `PossiblyUnusedParam` under `tests/`, and `DuplicateClass` on the two DBAL compatibility mocks. A new entry there is a suppression like any other and goes through the [suppression policy](../../rules/code-quality.md#suppression-policy). `findUnusedBaselineEntry` is on, so a stale entry fails the run.
+`psalm.xml` holds the registered `<issueHandlers>`; read it before concluding an issue is unsilenced. A new entry there is a suppression like any other and goes through the [suppression policy](../../rules/code-quality.md#suppression-policy). `findUnusedBaselineEntry` is on, so a stale entry fails the run.

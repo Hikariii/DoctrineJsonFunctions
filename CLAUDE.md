@@ -83,7 +83,7 @@ A rename is complete only when every reference is updated in the same edit: clas
 
 Say the outcome and stop. Mechanism, evidence, counts and tool names are opt-in, not the default; cut anything that would not change the reader's next action. Plain words, active voice, no em dashes. Full register and the AI tells to avoid: [.claude/skills/writing/SKILL.md](.claude/skills/writing/SKILL.md).
 
-`.claude/` docs, `CLAUDE.md` and `CONTEXT.md` use a terser Claude-facing register; PRs, issues, commits and code comments use the human-facing one. Don't mix them.
+There are two registers, human-facing and a terser Claude-facing one. That skill holds which destinations take each; don't mix them.
 
 ## Rules and skills
 

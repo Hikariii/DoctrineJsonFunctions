@@ -14,13 +14,13 @@ Ask if not provided:
 
 ## Never limit PHPStan output
 
-**Never pipe PHPStan through `grep`, `tail`, `head`, or any filter**: read the complete output. A filtered run hides errors introduced elsewhere and makes a fix look successful when it isn't.
+**Never pipe PHPStan through `grep`, `tail`, `head`, or any filter**: read the complete output. Same reasoning and capture-to-log pattern as [psalm.md § Never limit Psalm output](psalm.md#never-limit-psalm-output).
 
 ```
 composer phpstan > /tmp/phpstan.log 2>&1; echo "exit: $?"
 ```
 
-Then open `/tmp/phpstan.log` with the Read tool. The log makes re-reading free: never re-run PHPStan just to see its output again.
+Then open `/tmp/phpstan.log` with the Read tool.
 
 Scoped run: `vendor/bin/phpstan analyse --memory-limit=512M <path> > /tmp/phpstan.log 2>&1`. Level override: add `--level=<n>`.
 
