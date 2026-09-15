@@ -6,5 +6,6 @@
 coverage.xml
 coverage-integration.xml
 .phpcs-cache
-.plan
+/.plan/*
+!/.plan/.gitkeep
 .env
