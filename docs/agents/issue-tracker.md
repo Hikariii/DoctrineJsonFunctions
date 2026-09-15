@@ -2,7 +2,7 @@
 
 Issues and specs for this repo live as GitHub issues on **`ScientaNL/DoctrineJsonFunctions`**, the upstream project. Use the `gh` CLI for all operations.
 
-This clone has two remotes: `origin` is a personal fork (`Hikariii/DoctrineJsonFunctions`) and `upstream` is the project. `gh` infers the repo from `origin`, which is the wrong one, so **pass `--repo ScientaNL/DoctrineJsonFunctions` on every command**.
+A contributor clone usually carries the project as `upstream` and a fork as `origin`. `gh` infers the repo from `origin`, so **pass `--repo ScientaNL/DoctrineJsonFunctions` on every command** rather than relying on the default.
 
 ## Conventions
 
