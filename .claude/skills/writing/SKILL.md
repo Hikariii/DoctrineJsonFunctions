@@ -7,7 +7,7 @@ description: Use when writing human-facing text (commit messages, PR description
 
 The **human-facing** register: chat replies, commit messages, PR and issue text, README and docs, code comments and docblocks. Concise but readable prose. Not code itself.
 
-`.claude/` config docs, `CLAUDE.md` and `CONTEXT.md` are Claude-facing → a terser register: dense, telegraphic, no narrative paragraphs. Don't mix them: no narrative paragraphs in a rule, no telegraphic fragments in a PR description.
+`.claude/` config docs, `AGENTS.md` and `CONTEXT.md` are Claude-facing → a terser register: dense, telegraphic, no narrative paragraphs. Don't mix them: no narrative paragraphs in a rule, no telegraphic fragments in a PR description.
 
 This is a public repository. Every commit message, PR description and issue reply is read by contributors who have no context from this session.
 

@@ -6,14 +6,14 @@ description: Commit, push to origin and open a prefilled PR form in the browser.
 
 Commit message and PR body follow the [writing skill](../skills/writing/SKILL.md). Shortest version that works: subject line only unless the why isn't in the diff.
 
-Never `gh pr create` without `--web`. This command stops at the prefilled form; the user reviews the diff there and creates the PR. That is how [CLAUDE.md § Running commands](../../CLAUDE.md#running-commands) ("always ask before opening a PR") is satisfied.
+Never `gh pr create` without `--web`. This command stops at the prefilled form; the user reviews the diff there and creates the PR. That is how [AGENTS.md § Running commands](../../AGENTS.md#running-commands) ("always ask before opening a PR") is satisfied.
 
 ## Steps
 
 1. `git status` + `git diff` (staged and unstaged) + `git log upstream/master..HEAD`, see what's actually going in.
 2. On `master`? Branch first.
-3. Uncommitted work → stage it and commit. One subject line, imperative, no body unless the why is non-obvious; issue ref as the last line, same form as the [body](#body). Run the checks the [CLAUDE.md § After making changes](../../CLAUDE.md#after-making-changes) table requires for what you changed. Never `--no-verify`.
-4. `git push origin HEAD`, per [CLAUDE.md § Running commands](../../CLAUDE.md#running-commands).
+3. Uncommitted work → stage it and commit. One subject line, imperative, no body unless the why is non-obvious; issue ref as the last line, same form as the [body](#body). Run the checks the [AGENTS.md § After making changes](../../AGENTS.md#after-making-changes) table requires for what you changed. Never `--no-verify`.
+4. `git push origin HEAD`, per [AGENTS.md § Running commands](../../AGENTS.md#running-commands).
 5. Open the prefilled form, `<fork-owner>` from `git remote -v`:
    ```bash
    gh pr create --web --repo ScientaNL/DoctrineJsonFunctions --base master --head <fork-owner>:<branch> \

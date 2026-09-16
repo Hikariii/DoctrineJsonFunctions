@@ -58,7 +58,7 @@ Applies to every form, inline or registered: `@psalm-suppress`, `@phpstan-ignore
 
 Writing a test: the assertion rules are in [Testing § Assertions](testing.md#assertions).
 
-**A task is not complete until tests pass.** Run the affected validation commands ([CLAUDE.md § After making changes](../../CLAUDE.md)) and confirm they pass before presenting the result as done.
+**A task is not complete until tests pass.** Run the affected validation commands ([AGENTS.md § After making changes](../../AGENTS.md#after-making-changes)) and confirm they pass before presenting the result as done.
 
 **Characterization tests before refactoring shared code.** Before a behaviour-preserving refactor of code every platform's node path runs through: first confirm or extend tests that pin current behaviour and are green against the unchanged code, then refactor. The safety net goes in before the change; "I'll add tests after" leaves the regression window open. Refactor sibling of the [bugfix skill](../skills/bugfix/SKILL.md)'s failing-test-first rule: there the test is red first (proves the bug), here green first (proves no regression).
 

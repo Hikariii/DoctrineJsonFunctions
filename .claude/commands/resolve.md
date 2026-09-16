@@ -41,7 +41,7 @@ A claim about what a platform accepts, or about a Doctrine API, is checked again
 
 ## Apply
 
-Apply the `apply` set, amend into the commit that owns each change, run the checks the [CLAUDE.md § After making changes](../../CLAUDE.md#after-making-changes) table requires, push `--force-with-lease`.
+Apply the `apply` set, amend into the commit that owns each change, run the checks the [AGENTS.md § After making changes](../../AGENTS.md#after-making-changes) table requires, push `--force-with-lease`.
 
 Then verify each one landed, by the reviewer's own claim, not by your edit succeeding:
 
