@@ -16,9 +16,9 @@ Mechanical only. Never posts a comment, never re-requests a review, never opens 
 4. Fix what's red, easy ones only:
    - Failed checks from step 1 → `gh run view <run-id> --repo ScientaNL/DoctrineJsonFunctions --log-failed` for each, and read the whole log rather than grepping it.
    - A failure naming a test absent from the working tree came from `master`. Still yours to fix; say so in the report.
-   - The CI matrix runs combinations your machine does not: a job green locally can be red on another PHP version, DBAL or ORM major, or platform. Read which matrix leg failed before concluding the fix is wrong ([CLAUDE.md § The support matrix](../../CLAUDE.md#the-support-matrix-decides-most-questions)).
+   - The CI matrix runs combinations your machine does not: a job green locally can be red on another PHP version, DBAL or ORM major, or platform. Read which matrix leg failed before concluding the fix is wrong ([AGENTS.md § The support matrix](../../AGENTS.md#the-support-matrix-decides-most-questions)).
    - An integration leg needs its server: `docker-compose.yml`, then that platform's suite.
-   - Run the checks the [CLAUDE.md § After making changes](../../CLAUDE.md#after-making-changes) table requires before pushing.
+   - Run the checks the [AGENTS.md § After making changes](../../AGENTS.md#after-making-changes) table requires before pushing.
 5. Amend into the commit that owns the change; never a "fix review" or "fix CI" commit. The subject still describes the change after amending; if it no longer does, rewrite it. Splitting or reordering commits: only when asked.
 6. `git push --force-with-lease`.
 7. Watch with the Monitor tool over `gh pr checks <n> --repo ScientaNL/DoctrineJsonFunctions --watch --interval 60`, event on each failure and on completion. A failure lands → back to step 4, amend, push, keep watching.

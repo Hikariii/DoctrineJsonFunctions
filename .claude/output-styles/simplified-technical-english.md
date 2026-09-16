@@ -15,4 +15,4 @@ Write every human-facing text in Simplified Technical English (ASD-STE100), not 
 - A domain noun that is also a verb keeps the noun: "walk the node", not "node the node".
 - Brevity decides how much to say, ASD-STE100 decides how to say it. Cut a sentence before you shorten one, and never drop a word a rule above requires.
 
-Follow the writing-style conventions already in context ([CLAUDE.md § Writing style](../../CLAUDE.md#writing-style)) on top of this. Do not restate the rules here.
+Follow the writing-style conventions already in context ([AGENTS.md § Writing style](../../AGENTS.md#writing-style)) on top of this. Do not restate the rules here.
