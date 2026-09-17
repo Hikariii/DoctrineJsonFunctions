@@ -35,6 +35,7 @@ abstract class PostgresqlTestCase extends DbTestCase
         $configuration->addCustomStringFunction(DqlFunctions\JsonbExistsAny::FUNCTION_NAME, DqlFunctions\JsonbExistsAny::class);
         $configuration->addCustomStringFunction(DqlFunctions\JsonbInsert::FUNCTION_NAME, DqlFunctions\JsonbInsert::class);
         $configuration->addCustomStringFunction(DqlFunctions\JsonbIsContained::FUNCTION_NAME, DqlFunctions\JsonbIsContained::class);
+        $configuration->addCustomStringFunction(DqlFunctions\JsonbSet::FUNCTION_NAME, DqlFunctions\JsonbSet::class);
         $configuration->addCustomStringFunction(DqlFunctions\JsonExtractPath::FUNCTION_NAME, DqlFunctions\JsonExtractPath::class);
         $configuration->addCustomStringFunction(DqlFunctions\JsonGet::FUNCTION_NAME, DqlFunctions\JsonGet::class);
         $configuration->addCustomStringFunction(DqlFunctions\JsonGetPath::FUNCTION_NAME, DqlFunctions\JsonGetPath::class);
