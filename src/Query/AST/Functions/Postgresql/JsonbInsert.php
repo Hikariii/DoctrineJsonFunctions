@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scienta\DoctrineJsonFunctions\Query\AST\Functions\Postgresql;
 
 /**
- * "JSONB_INSERT" "(" StringPrimary "," StringPrimary "," StringPrimary ")".
+ * "JSONB_INSERT" "(" StringPrimary "," StringPrimary "," StringPrimary ["," NewValue] ")".
  */
 class JsonbInsert extends PostgresqlJsonFunctionNode
 {
@@ -15,5 +15,5 @@ class JsonbInsert extends PostgresqlJsonFunctionNode
     protected $requiredArgumentTypes = [self::STRING_PRIMARY_ARG, self::STRING_PRIMARY_ARG, self::STRING_PRIMARY_ARG];
 
     /** @var string[] */
-    protected $optionalArgumentTypes = [self::STRING_PRIMARY_ARG];
+    protected $optionalArgumentTypes = [self::VALUE_ARG];
 }
